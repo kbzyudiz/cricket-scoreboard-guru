@@ -1,27 +1,27 @@
 
 import { MatchCard, MatchProps } from "./MatchCard";
 
-// Mock data for recent matches
+// Mock data for recent matches - IPL 2025
 const recentMatches: MatchProps[] = [
   {
     id: "5",
-    team1: "Bangladesh",
-    team2: "Zimbabwe",
-    venue: "Shere Bangla Stadium, Dhaka",
-    date: "2025-04-20T09:00:00",
+    team1: "LSG",
+    team2: "RR",
+    venue: "Ekana Cricket Stadium, Lucknow",
+    date: "2025-03-21T19:30:00",
     status: "completed",
-    score1: "278/7 (50)",
-    score2: "240/10 (47.3)",
+    score1: "189/6 (20)",
+    score2: "192/4 (19.2)",
   },
   {
     id: "6",
-    team1: "Afghanistan",
-    team2: "Ireland",
-    venue: "Greater Noida Sports Complex",
-    date: "2025-04-19T09:30:00",
+    team1: "RCB",
+    team2: "PBKS",
+    venue: "M Chinnaswamy Stadium, Bengaluru",
+    date: "2025-03-20T19:30:00",
     status: "completed",
-    score1: "265/8 (50)",
-    score2: "219/10 (45.2)",
+    score1: "204/8 (20)",
+    score2: "186/8 (20)",
   },
 ];
 

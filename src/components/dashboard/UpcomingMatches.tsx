@@ -1,30 +1,30 @@
 
 import { MatchCard, MatchProps } from "./MatchCard";
 
-// Mock data for upcoming matches
+// Mock data for upcoming matches - IPL 2025
 const upcomingMatches: MatchProps[] = [
   {
-    id: "1",
-    team1: "India",
-    team2: "Australia",
-    venue: "MCG, Melbourne",
-    date: "2025-05-02T09:30:00",
-    status: "upcoming",
-  },
-  {
     id: "2",
-    team1: "England",
-    team2: "South Africa",
-    venue: "Lords, London",
-    date: "2025-05-03T10:00:00",
+    team1: "GT",
+    team2: "MI",
+    venue: "Narendra Modi Stadium, Ahmedabad",
+    date: "2025-03-23T19:30:00",
     status: "upcoming",
   },
   {
     id: "3",
-    team1: "New Zealand",
-    team2: "West Indies",
-    venue: "Eden Park, Auckland",
-    date: "2025-05-05T08:00:00",
+    team1: "DC",
+    team2: "PBKS",
+    venue: "Arun Jaitley Stadium, Delhi",
+    date: "2025-03-24T19:30:00",
+    status: "upcoming",
+  },
+  {
+    id: "4",
+    team1: "KKR",
+    team2: "SRH",
+    venue: "Eden Gardens, Kolkata",
+    date: "2025-03-25T19:30:00",
     status: "upcoming",
   },
 ];

@@ -1,32 +1,31 @@
-
 import { AppLayout } from "@/components/layout/AppLayout";
 import { MatchCard, MatchProps } from "@/components/dashboard/MatchCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-// Mock data for upcoming matches
+// Mock data for upcoming matches - IPL 2025
 const upcomingMatches: MatchProps[] = [
   {
-    id: "1",
-    team1: "India",
-    team2: "Australia",
-    venue: "MCG, Melbourne",
-    date: "2025-05-02T09:30:00",
-    status: "upcoming",
-  },
-  {
     id: "2",
-    team1: "England",
-    team2: "South Africa",
-    venue: "Lords, London",
-    date: "2025-05-03T10:00:00",
+    team1: "GT",
+    team2: "MI",
+    venue: "Narendra Modi Stadium, Ahmedabad",
+    date: "2025-03-23T19:30:00",
     status: "upcoming",
   },
   {
     id: "3",
-    team1: "New Zealand",
-    team2: "West Indies",
-    venue: "Eden Park, Auckland",
-    date: "2025-05-05T08:00:00",
+    team1: "DC",
+    team2: "PBKS",
+    venue: "Arun Jaitley Stadium, Delhi",
+    date: "2025-03-24T19:30:00",
+    status: "upcoming",
+  },
+  {
+    id: "4",
+    team1: "KKR",
+    team2: "SRH",
+    venue: "Eden Gardens, Kolkata",
+    date: "2025-03-25T19:30:00",
     status: "upcoming",
   },
 ];
@@ -34,14 +33,14 @@ const upcomingMatches: MatchProps[] = [
 // Mock data for live matches
 const liveMatches: MatchProps[] = [
   {
-    id: "4",
-    team1: "Pakistan",
-    team2: "Sri Lanka",
-    venue: "Gaddafi Stadium, Lahore",
-    date: "2025-04-22T10:00:00",
+    id: "1",
+    team1: "CSK",
+    team2: "RCB",
+    venue: "MA Chidambaram Stadium, Chennai",
+    date: "2025-03-22T19:30:00",
     status: "live",
-    score1: "212/4 (35.2)",
-    score2: "145/3 (22.0)",
+    score1: "182/4 (16.2)",
+    score2: "125/3 (12.0)",
   },
 ];
 
@@ -49,23 +48,23 @@ const liveMatches: MatchProps[] = [
 const completedMatches: MatchProps[] = [
   {
     id: "5",
-    team1: "Bangladesh",
-    team2: "Zimbabwe",
-    venue: "Shere Bangla Stadium, Dhaka",
-    date: "2025-04-20T09:00:00",
+    team1: "LSG",
+    team2: "RR",
+    venue: "Ekana Cricket Stadium, Lucknow",
+    date: "2025-03-21T19:30:00",
     status: "completed",
-    score1: "278/7 (50)",
-    score2: "240/10 (47.3)",
+    score1: "189/6 (20)",
+    score2: "192/4 (19.2)",
   },
   {
     id: "6",
-    team1: "Afghanistan",
-    team2: "Ireland",
-    venue: "Greater Noida Sports Complex",
-    date: "2025-04-19T09:30:00",
+    team1: "RCB",
+    team2: "PBKS",
+    venue: "M Chinnaswamy Stadium, Bengaluru",
+    date: "2025-03-20T19:30:00",
     status: "completed",
-    score1: "265/8 (50)",
-    score2: "219/10 (45.2)",
+    score1: "204/8 (20)",
+    score2: "186/8 (20)",
   },
 ];
 

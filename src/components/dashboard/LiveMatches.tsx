@@ -1,17 +1,17 @@
 
 import { MatchCard, MatchProps } from "./MatchCard";
 
-// Mock data for live matches
+// Mock data for live matches - IPL 2025
 const liveMatches: MatchProps[] = [
   {
-    id: "4",
-    team1: "Pakistan",
-    team2: "Sri Lanka",
-    venue: "Gaddafi Stadium, Lahore",
-    date: "2025-04-22T10:00:00",
+    id: "1",
+    team1: "CSK",
+    team2: "RCB",
+    venue: "MA Chidambaram Stadium, Chennai",
+    date: "2025-03-22T19:30:00",
     status: "live",
-    score1: "212/4 (35.2)",
-    score2: "145/3 (22.0)",
+    score1: "182/4 (16.2)",
+    score2: "125/3 (12.0)",
   },
 ];
 
