@@ -1,15 +1,14 @@
-
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { LeaderboardTable, LeaderboardEntry } from "./LeaderboardTable";
 
-// Mock data for tournament leaderboard
+// Mock data for IPL 2025 tournament leaderboard
 const tournamentLeaderboard: LeaderboardEntry[] = [
   {
     rank: 1,
     userId: "user5",
     name: "Rahul Kumar",
     points: 578,
-    matchesPlayed: 5,
+    matchesPlayed: 8,
   },
   {
     rank: 2,
@@ -83,7 +82,7 @@ export function TournamentLeaderboard() {
       <CardHeader className="pb-2">
         <h3 className="font-bold text-lg">Tournament Leaderboard</h3>
         <p className="text-sm text-gray-500">
-          2025 Cricket World Cup
+          IPL 2025
         </p>
       </CardHeader>
       <CardContent>

@@ -2,6 +2,7 @@
 import { AppLayout } from "@/components/layout/AppLayout";
 import { MatchLeaderboard } from "@/components/leaderboard/MatchLeaderboard";
 import { TournamentLeaderboard } from "@/components/leaderboard/TournamentLeaderboard";
+import { PlayerSelectionsList } from "@/components/leaderboard/PlayerSelectionsList";
 import { YourStats } from "@/components/leaderboard/YourStats";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -23,7 +24,7 @@ const Leaderboard = () => {
   return (
     <AppLayout>
       <div className="space-y-6">
-        <h1 className="text-2xl font-bold">Leaderboard</h1>
+        <h1 className="text-2xl font-bold">IPL 2025 Leaderboard</h1>
         
         <YourStats stats={userStats} />
         
@@ -31,6 +32,7 @@ const Leaderboard = () => {
           <TabsList>
             <TabsTrigger value="tournament">Tournament</TabsTrigger>
             <TabsTrigger value="match">Latest Match</TabsTrigger>
+            <TabsTrigger value="selections">Player Selections</TabsTrigger>
           </TabsList>
           
           <TabsContent value="tournament" className="pt-4">
@@ -39,6 +41,10 @@ const Leaderboard = () => {
           
           <TabsContent value="match" className="pt-4">
             <MatchLeaderboard matchId="4" />
+          </TabsContent>
+          
+          <TabsContent value="selections" className="pt-4">
+            <PlayerSelectionsList />
           </TabsContent>
         </Tabs>
       </div>
