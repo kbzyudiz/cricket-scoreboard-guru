@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				cricket: {
+					"dark-green": "#1e5631",
+					"light-green": "#52a447",
+					"pitch": "#d6c397",
+					"ball": "#b80000",
+					"sky": "#87CEEB",
+					"india": "#0072bc",
+					"australia": "#ffcd00",
+					"england": "#1a365d",
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-score': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.6' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-score': 'pulse-score 1.5s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'cricket-field': "url('/assets/cricket-field.png')",
+				'cricket-pattern': "repeating-linear-gradient(45deg, #1e5631 0, #1e5631 2px, #52a447 0, #52a447 10px)"
 			}
 		}
 	},
